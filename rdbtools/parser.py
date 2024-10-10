@@ -959,8 +959,8 @@ class RdbParser(object):
 
     def verify_version(self, version_str) :
         version = int(version_str)
-        if version < 1 or version > 9:
-            raise Exception('verify_version', 'Invalid RDB version number %d' % version)
+#        if version < 1 or version > 9:
+#            raise Exception('verify_version', 'Invalid RDB version number %d' % version)
         self._rdb_version = version
 
     def init_filter(self, filters):
